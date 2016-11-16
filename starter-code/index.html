@@ -4,31 +4,50 @@
   <title>Memory Card Game</title>
   <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-</body>
 </head>
-<body>
+<body id="start">
   <nav class="clearfix">
-    <a href="#instructions">Instructions</a>
-    <a href="#game-board">Game</a>
+    <a class="left" href="#start">Instructions</a>
+    <div class="time">TIME</div>
+    <a class="center" href="#options">Options</a>
+    <div class="score"><div id="qty">Score: 0</div></div>
+    <a href="#bottom" class="right">Start Game</a>
   </nav>
-  <hr>
+  <div class="wrapper">
   <h1>Memory Game</h1>
     <h2 id="instructions">Instructions</h2>
       <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or Pairs, is a card game in which all of the cards are laid facedown on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
     <h3>Test your memory!</h3>
-      <p>You can remember the name of your Kindergarten teacher, and all the lyrics to that Justin Bieber song, but will your memory serve you when you neeed it???</p>
-      <p>Challenge your friends to a game, or just try to better your own score!</p>
+      <p>Will your memory serve you when you need it???</p>
+      <br>
+      <p id="options">Challenge your friends to a game, or just try to better your own score!</p>
+      <br>
     <h4>Developed by <a href="http://www.franklnchristopherbrooks.com">Franklin Brooks</a>.</h4>
-    <div class="board" id="game-board">
-    <!--  
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div> 
-      -->
+    <br>
     </div>
-    <footer>
-    <p>Created with ♥ by <span class="name">GA</span></p>
+    <div class="wrapper">
+    <h1>GAME OPTIONS</h1>
+    <h2>DIFFICULTY</h2>
+    <p>Choose your difficulty level: 4 cards or 8 cards.</p>
+    <br>
+    <button id="b1">4 CARDS</button>
+    <button id="b2">8 CARDS</button>
+    <h2>SHOW / HIDE SCORE</h2>
+    <button id="b3">TOGGLE SCORE</button>
+    <h2>RESET SCORE</h2>
+    <button id="b4">RESET SCORE</button>
+    <!--<h2>TOGGLE TIMER</h2>
+    <button id="toggleArrays">VIEW TIME</button>
+    <h2>TOGGLE SOUND</h2>
+    <button id="toggleSound">SILENT</button> -->
+    </div>
+    <div class="wrapper">
+    <div class="board" id="game-board">
+    </div>
+    <button id="resetButton" class="resetButton_invisible">Play Again?</button>
+    </div>
+    <footer id="bottom">
+    <p>Created with <span class="heart">♥</span> by <span class="name"><a href="http://www.generalassemb.ly">GA</a></span></p>
     </footer>
   <script src="C:\fundamentals\wdi-fundamentals-memorygame\starter-code\main.js"></script>
 </body>

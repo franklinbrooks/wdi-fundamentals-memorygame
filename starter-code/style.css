@@ -1,21 +1,105 @@
 body {
+	padding-top: 60px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #808080;
 	text-align: center;
 }
 
 nav {
 	background-color: #808080;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
 }
 
 nav a {
 	background-color: #ffbf00;
 	color: white;
-    padding: 35px;
+    padding: 10px;
     display: block;
-    float: left;
 }
 
 nav a:hover {
 	background-color: #ee5f3c;
+}
+
+.left {
+	float: left;
+	width: 14%;
+	display: inline-block;
+	border: 6px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.time {
+	float: left;
+	width: 14%;
+	display: inline-block;
+	border: 6px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: #ee5f3c;
+	color: #ee5f3c;
+    padding: 10px;
+    display: block;
+}
+
+.center {
+	float: left;
+	width: 14%;
+	display: inline-block;
+	border: 6px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.score {
+	float: left;
+	width: 14%;
+	display: inline-block;
+	border: 6px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: #ee5f3c;
+	color: white;
+    padding: 10px;
+    display: block;
+}
+
+.visibleScore {
+	color: white;
+}
+
+.invisibleScore {
+	color: #ee5f3c
+}
+
+#qty {
+	display: inline-block;
+}
+
+.right {
+	float: left;
+	width: 14%;
+	display: inline-block;
+	border: 6px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .clearfix:after {
@@ -27,34 +111,116 @@ nav a:hover {
     font-size: 0;
 }
 
+.wrapper {
+	height: 100%;
+	width: 90%;
+	margin: 10px auto;
+	background-color: white;
+	border: 10px solid rgb(2, 132, 130);
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+p {
+	font-size: 20px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .board {
 	height: 50%;
-	width: 50%;
+	width: 100%;
 	display: inline-block;
+	margin: 0 auto;
 }
 
 .card {
-	background-color: yellow;
-    height: 200px;
-    width: 150px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4f/Bicyclebackside.jpg);
+    background-size: 112.5px 150px;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 112.5px;
     border: 1px solid black;
     border-radius: 10px;
     float: left;
-    margin: 8%;
+    margin: 5%;
 }
 
 h1 {
 	color: rgb(2, 132, 130);
+	font-size: 2em;
+	font-weight: 800;
+	margin: 10px;
 }
 
 h2 {
 	color: #ffd700;
+	font-size: 1.5em;
+	font-weight: 800;
+	margin: 10px;
 }
 
-.name {
+h3 {
+	color: #ffd700; 
+    font-size: 1.17em;
+    font-weight: 800;
+    margin: 10px;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.heart {
     color: #ff0000;
+    text-decoration: none;
 }
 
-footer {
+ a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+footer a {
 	background-color: #808080;
+}
+
+.resetButton_invisible {
+  display: block;
+  opacity: 0;
+  margin: 0 auto 30px;
+}
+
+.resetButton_visible {
+  display: block;
+  margin: 0 auto 30px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+img {
+    height: 151px;
+    width: 113px;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: left;
+    margin: -2%;
+}
+
+button {
+	font-size: 1.5em;
+	font-weight: 800;
+	background-color: #ffbf00;
+	color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+button:hover {
+	background-color: #ee5f3c;
 }
